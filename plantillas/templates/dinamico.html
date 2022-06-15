@@ -8,9 +8,13 @@
 <h1>Hola {{name}}</h1>
 <h3>Categorias</h3>
 <ul>
+    {% comment %}
+sdcdscsddscdscsdcds
+    {% endcomment %}
     {% for category in categories %}
     <li>{{category}}</li>
     {% endfor %}
 </ul>
+<h3> Todas las categorias: {{categories|length}} </h3>
 </body>
 </html>
