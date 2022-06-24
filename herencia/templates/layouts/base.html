@@ -10,19 +10,11 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../herencia">Herencia</a></li>
-            <li><a href="../ejemplo">Ejemplo</a></li>
-            <li><a href="../otra">Otra</a></li>
-        </ul>
-    </nav>
+    {% include './partials/menu.html' %}
     <main>
         {% block content %}{% endblock %}
     </main>
-    <footer>
-        <p>Todos los derechos reservados</p>
-    </footer>
+    {% include './partials/footer.html' %}
     {% block scripts %}{% endblock %}
 </body>
 </html>
